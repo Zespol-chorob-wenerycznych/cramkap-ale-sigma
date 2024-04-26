@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.15)
+
+project(cramkap)
+
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+file(GLOB_RECURSE CRAMKAP_SOURCES CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c)
+
+add_executable(${PROJECT_NAME})
+target_sources(${PROJECT_NAME} PRIVATE ${CRAMKAP_SOURCES})
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Vendor)

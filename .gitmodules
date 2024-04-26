@@ -1,0 +1,6 @@
+[submodule "Vendor/glfw"]
+	path = Vendor/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "Vendor/glad-4.6-cmake"]
+	path = Vendor/glad-4.6-cmake
+	url = https://github.com/aer-i/glad-4.6-cmake.git
